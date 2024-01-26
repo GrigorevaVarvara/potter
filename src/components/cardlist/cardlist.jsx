@@ -10,7 +10,7 @@ function Cardlist({cards}) {
                 name={card.name}
                 actor={card.actor}
                 gender={card.gender}
-                house={card.house}
+                school={card.school.name}
                 wand={card.wand}
                 alive={card.alive}/>;
                 })

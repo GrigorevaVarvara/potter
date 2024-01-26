@@ -20,13 +20,10 @@ function Header({schools}) {
                         <option value="0">Выберите</option>
                         {
                             schools.map((school)=>{
-                                <option value="0">{school.name}</option>
+                                return <option value="0">{school.name}</option>
                             })
                         }
-                        <option value="1">Гриффиндор</option>
-                        <option value="2">Слизерин</option>
-                        <option value="3">Когтевран</option>
-                        <option value="4">Пуффендуй</option>
+                        
                     </select>
                 </div>
             </form>

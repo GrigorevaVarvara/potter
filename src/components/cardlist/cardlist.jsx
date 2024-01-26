@@ -1,10 +1,21 @@
 import Card from '../card/card';
 import './cardlist.scss'
 
-function Cardlist() {
+function Cardlist({cards}) {
     return <div className="card-list">
         <div className="container">
-            <Card/>
+            {
+                cards.map((card)=>{
+                return <Card img={card.img}
+                name={card.name}
+                actor={card.actor}
+                gender={card.gender}
+                house={card.house}
+                wand={card.wand}
+                alive={card.alive}/>;
+                })
+            }
+            
         </div>
     </div>;
 }

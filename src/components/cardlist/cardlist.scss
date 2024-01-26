@@ -1,5 +1,13 @@
 .card-list{
+    width: 688px;
+    margin: 0 auto;
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
 }

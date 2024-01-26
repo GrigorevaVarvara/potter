@@ -1,19 +1,18 @@
 import './card.scss'
-import granger from './../../assets/img/pic1.png'
 
-function Card() {
+function Card({img, name,actor,gender,house,wand,alive}) {
     return <div className="card">
         <div className="image">
-            <img alt='granger' src={granger}></img>
+            <img alt='granger' src={img}></img>
         </div>
 
         <div className="info">
-            <p className='name'>Hermione Granger</p>
-            <p className='actor'>Actor: Emma Watson</p>
-            <p className='gender'>Gender: female</p>
-            <p className='house'>House: Gryffindor</p>
-            <p className='wand'>Wand core: dragon heartstring</p>
-            <p className='alive'>Alive: yes</p>
+            <p className='name'>{name}</p>
+            <p className='actor'>Actor: {actor}</p>
+            <p className='gender'>Gender: {gender}</p>
+            <p className='house'>House: {house}</p>
+            <p className='wand'>Wand core: {wand}</p>
+            <p className='alive'>Alive: {alive ? 'yes' : 'no'}</p>
         </div>
     </div>;
 }
